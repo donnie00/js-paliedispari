@@ -15,23 +15,33 @@
       <section class="palindrome bg-dark text-light text-center py-3">
          <h1>Check for palindrome</h1>
          <div class="d-flex align-items-center justify-content-center">
-            <input id="palindromeInput" class="w-75 p-1" type="text" placeholder="inserisci parola da controllare"
-               value="collana">
+            <input id="palindromeInput" class="w-75 p-1" type="text" placeholder="inserisci parola da controllare">
             <button id="palindromeBtn" class="btn btn-success mx-1">Check</button>
          </div>
-         <p id="palindromeMessage"></p>
+         <p id="palindromeMessage">Is your word palindrome?</p>
       </section>
 
-      <section class="oddeven bg-gradient text-center py-3">
-         <h1>
-            Odd or Even?<small class="text-muted"> Place your bet...</small>
-         </h1>
-         <div class="m-3">
-            <input class="w-25 mx-3" type="text" placeholder="Inserisci la tua scommessa">
-            <input class="w-25 mx-3" type="text" placeholder="Inserisci il numero">
+      <section class="oddeven bg-light text-center py-3">
+         <div class="container">
+            <h1>
+               Odd or Even?<small class="text-muted"> Place your bet...</small>
+            </h1>
+            <div class="m-3 input-group">
+               <select class="form-select" name="betSelect" id="betSelect">
+                  <option value="Odd">
+                     Odd
+                  </option>
+                  <option value="Even">
+                     Even
+                  </option>
+               </select>
+               <input id="betInput" class="mx-3 form-control" type="number" placeholder="Inserisci il numero (0-5)"
+                  min="1" max="5">
+            </div>
+            <button id="betBtn" class="btn btn-dark m-4">Bet!</button>
+            <p id="resultValue" class="display-6"> </p>
+            <p id="resultMessage" class="display-6">Who will win?</p>
          </div>
-         <button class="btn btn-dark m-4">Bet!</button>
-         <p>You lost, unlucky!</p>
       </section>
    </main>
 
