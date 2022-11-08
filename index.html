@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Palindrome / Even-Odd</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+   <main>
+      <section class="palindrome bg-dark text-light text-center py-3">
+         <h1>Check for palindrome</h1>
+         <div class="d-flex align-items-center justify-content-center">
+            <input id="palindromeInput" class="w-75 p-1" type="text" placeholder="inserisci parola da controllare"
+               value="collana">
+            <button id="palindromeBtn" class="btn btn-success mx-1">Check</button>
+         </div>
+         <p id="palindromeMessage"></p>
+      </section>
+
+      <section class="oddeven bg-gradient text-center py-3">
+         <h1>
+            Odd or Even?<small class="text-muted"> Place your bet...</small>
+         </h1>
+         <div class="m-3">
+            <input class="w-25 mx-3" type="text" placeholder="Inserisci la tua scommessa">
+            <input class="w-25 mx-3" type="text" placeholder="Inserisci il numero">
+         </div>
+         <button class="btn btn-dark m-4">Bet!</button>
+         <p>You lost, unlucky!</p>
+      </section>
+   </main>
+
+   <script src="js/palindrome.js"></script>
+   <script src="js/even-odd.js"></script>
+</body>
+
+</html>
